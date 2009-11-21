@@ -5,12 +5,14 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "ystore2spree"
-    gem.summary = %Q{Migrates a Yahoo Store data to Spree}
-    gem.description = %Q{Migrates a Yahoo Store to Spree}
+    gem.summary = %Q{Migrates a Yahoo Store data to Spree data}
+    gem.description = %Q{Migrates a Yahoo Store to Spree data}
     gem.email = "mikemondragon@gmail.com"
     gem.homepage = "http://github.com/monde/ystore2spree"
     gem.authors = ["Mike Mondragon"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.add_development_dependency "rr"
+    gem.add_development_dependency "redgreen"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
