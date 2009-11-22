@@ -1,9 +1,32 @@
 = ystore2spree
 
-Description goes here.
+* http://github.com/monde/ystore2spree
+* mailto:mikemondragon@gmail.com
+
+== Description
+
+YStore 2 Spree is a gem to harvest and ingest Yahoo Store data into a Spree
+store application.  The library's concerns are split between Y2s::Harvestor
+which is designed such that an external application can make use of its
+functionality; and Y2s::Harvestor::Application is used as the controller for the
+bin/y2s script and is not loaded unless it is utilized.
+
+== Command line
+
+In this example y2s will use the production evironment of the Spree app
+located at path.  It will then scrape the store at the URL, and from the data
+captured will create the appropriate taxonomy and products in the Spree
+application environment.
+
+./bin/y2s -e production /path/to/spree/app http://store.example.com/
+
+== Note on coding style
+
+Much of the coding style and gem layout is inspired by Josh Nichols jeweler
+gem.
 
 == Note on Patches/Pull Requests
- 
+
 * Fork the project.
 * Make your feature addition or bug fix.
 * Add tests for it. This is important so I don't break it in a

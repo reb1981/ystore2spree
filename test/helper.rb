@@ -27,4 +27,5 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'y2s'
 
 class Test::Unit::TestCase
+  include RR::Adapters::TestUnit unless include?(RR::Adapters::TestUnit)
 end
